@@ -143,11 +143,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/sample.png" alt="">
+              <img class="img-fluid" src="img/sweets.jpg" alt="candy shop idea">
             </a>
             <div class="portfolio-caption">
-              <h4>Sample</h4>
-              <p class="text-muted">Sample</p>
+              <h4>My Own Candy Shop Sample</h4>
+              <p class="text-muted">Wonder what it would be to have my own candy shop.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -478,10 +478,10 @@
                 <div class="modal-body">
 
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Sorry for the inconvenience ;(</p>
-                  <img class="img-fluid d-block mx-auto" src="img/uc.jpg" alt="">
-                  <p>Currently updating "My Project Samples."</p>
+                  <h2 class="text-uppercase">Business Casual</h2>
+                  <p class="item-intro text-muted">Candy Shop Idea</p>
+                  <img class="img-fluid d-block mx-auto" src="img/sweets.jpg" alt="">
+                  <p>Wondering what it would be like to have my own candy shop!</p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>
@@ -537,6 +537,46 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script>
+    // When Document is ready, build treehouse Badge Widget
+$(document).ready(function () {
+
+  // Replace the value for var 'e' with your      Treehouse Username
+  var e = "rileyhilliard",
+
+  // Treehouse Json
+  t = "http://teamtreehouse.com/" + e + ".json",
+
+  // Badges JQuery Identifier
+  n = $("#badges"),
+
+  // Badges Array
+  r = [],
+
+  // Badges Count
+  i = 0;
+
+  // Json Parse Treehouse User Badges Info
+  $.getJSON(t, function (e) {
+
+    // User Json Parse Select Badges Info
+  	var t = e.badges;
+
+    // Format Each badge's HTML
+  	$.each(t, function (e, t) {
+   r += '&lt;li&gt;&lt;a href="' + t.url + '" target="_blank"&gt;&lt;img src="' + t.icon_url + '" alt="' + t.name + '" title="' + t.name + '"/&gt;&lt;/a&gt;&lt;/li&gt;';
+   i++
+  	});
+
+    // Append Badge to #badges
+  	n.append(r);
+
+    // Header Badges count generator
+  	$("#treehouse-count").append('I have earned ' + i + ' badges at Treehouse!');
+  });
+});
+
+    </script>
 
   </body>
 
