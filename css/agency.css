@@ -13,7 +13,7 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: red;
 }
 
 a:hover {
@@ -118,7 +118,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: white;
+  color: red;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -131,12 +131,12 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: red;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: red;
+  color: #fed136;
 }
 
 @media (min-width: 992px) {
@@ -169,10 +169,16 @@ img::-moz-selection {
   }
 }
 
+h2{
+  color: red;
+}
+
+
+
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/sandiegobeach.jpg");
+  color: red;
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -364,6 +370,10 @@ header.masthead .intro-text .intro-heading {
   opacity: 0.3;
 }
 
+.download {
+  color: red;
+}
+
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
@@ -454,7 +464,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: red;
 }
 
 .timeline > li .timeline-image h4 {
