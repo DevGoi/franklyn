@@ -60,7 +60,7 @@ section h3.section-subheading {
 }
 
 .download{
-    color: black;
+    color: red;
     background-color: black;
     padding: 8px;
     border-radius: 60%;
@@ -190,6 +190,10 @@ img::-moz-selection {
 
 h2{
   color: red;
+}
+
+button{
+  text-decoration: none;
 }
 
 
